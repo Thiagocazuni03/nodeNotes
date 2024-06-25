@@ -31,10 +31,10 @@ function setOperation(){
                     message = await operations.delete();
                     rl.write(message + '\n')
                     break;
-                    case 5:
-                        rl.close()
-                        process.exit()
-                    break;
+                case 5:
+                    rl.close()
+                    process.exit()
+                break;
                 default:
                     throw new Error('Você não escolheu uma opção válida')
             }
@@ -66,7 +66,6 @@ function getOperations() {
                         } else {
                             res(`Arquivo ${archiveName} criado com sucesso!`);
                         } 
-                        rl.close();
                     });
                 });
             })
